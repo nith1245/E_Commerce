@@ -14,7 +14,7 @@ Business goal: reduce checkout drop-off by 18% within one quarter after release.
 - Product Owner: Sarah Johnson
 
 
-- Engineering Reviewer: **@nishas**
+- Engineering Reviewer:@nishas 
 
 
 - Support Lead: Maria Gomez
@@ -106,7 +106,7 @@ type PaymentIntentRequest = {
 
 **Related Resources**
 
-- [Design Board](https://example.com/designs/checkout-redesign)
+- [Design Board](https://example.com/designs/checkout-redesign) 
 
 
 - [Analytics Dashboard](https://example.com/analytics/checkout)
