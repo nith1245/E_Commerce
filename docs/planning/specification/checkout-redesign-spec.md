@@ -5,8 +5,9 @@
 This document defines the redesign of the checkout experience for Q2 2026. The goal is to reduce cart abandonment and improve payment completion.
 
 > 
-Business goal: reduce checkout drop-off by 18% within one quarter after release.
 
+
+Business goal: reduce checkout drop-off by 18% within one quarter after release.
 
 **Stakeholders**
 
@@ -35,7 +36,7 @@ Business goal: reduce checkout drop-off by 18% within one quarter after release.
 - payment status messaging
 
 
-** Out of Scope**
+*Out of Scope**
 
 - subscription billing changes
 
@@ -62,15 +63,19 @@ Business goal: reduce checkout drop-off by 18% within one quarter after release.
 
 **User Flow**
 
-1. User reviews cart
+- User reviews cart
 
-2. User enters shipping information
 
-3. User selects payment method
+- User enters shipping information
 
-4. User confirms order
 
-5. System displays success or failure state
+- User selects payment method
+
+
+- User confirms order
+
+
+- System displays success or failure state
 
 
 **API Notes**
@@ -90,16 +95,14 @@ type PaymentIntentRequest = {
 };
 ```
 
-
 **Validation Rules**
 
 
-| Field       | Rule     | Error Message |
+| Field | Rule | Error Message |
 | --- | --- | --- |
 | email | required and valid format | Please enter a valid email address |
 | coupon Code | optional, max 32 chars | Coupon code is too long |
-| postal Code | required for physical items | Postal code is required   |
-
+| postal Code | required for physical items | Postal code is required |
 
 **Related Resources**
 
